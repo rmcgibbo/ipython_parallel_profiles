@@ -1,3 +1,6 @@
+#pid files from ipython
+*.pid
+
 *.py[co]
 
 # Packages

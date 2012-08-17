@@ -1,0 +1,10 @@
+#PBS -N ipython
+#PBS -j oe
+#PBS -l walltime=12:00:00
+#PBS -l nodes={n}:ppn=24
+#PBS -q {queue}
+
+cd $PBS_O_WORKDIR
+
+mpirun --npernode 1 -np {n} --machinefile $PBS_NODEFILE ipengine --profile-dir={profile_dir}
+

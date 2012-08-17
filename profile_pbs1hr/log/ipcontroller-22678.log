@@ -1,0 +1,13 @@
+2012-08-16 22:22:26.959 [IPControllerApp] Hub listening on tcp://*:41180 for registration.
+2012-08-16 22:22:26.961 [IPControllerApp] Hub using DB backend: 'IPython.parallel.controller.dictdb.DictDB'
+2012-08-16 22:22:27.214 [IPControllerApp] hub::created hub
+2012-08-16 22:22:27.214 [IPControllerApp] writing connection info to /home/rmcgibbo/.ipython/profile_pbs1hr/security/ipcontroller-client.json
+2012-08-16 22:22:27.219 [IPControllerApp] writing connection info to /home/rmcgibbo/.ipython/profile_pbs1hr/security/ipcontroller-engine.json
+2012-08-16 22:22:27.224 [IPControllerApp] task::using Python leastload Task scheduler
+2012-08-16 22:22:27.224 [IPControllerApp] Heartmonitor started
+2012-08-16 22:22:27.236 [IPControllerApp] Creating pid file: /home/rmcgibbo/.ipython/profile_pbs1hr/pid/ipcontroller.pid
+2012-08-16 22:22:31.621 [IPControllerApp] client::client 'd982ff26-d3d8-4773-b86a-9397947dafc9' requested u'registration_request'
+2012-08-16 22:22:36.224 [IPControllerApp] registration::finished registering engine 0:'d982ff26-d3d8-4773-b86a-9397947dafc9'
+2012-08-16 22:22:36.225 [IPControllerApp] engine::Engine Connected: 0
+2012-08-16 22:22:37.198 [IPControllerApp] Got signal 2, terminating children...
+2012-08-16 22:22:37.199 [IPControllerApp] Got signal 2, terminating children...

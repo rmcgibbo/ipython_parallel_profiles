@@ -1,14 +1,14 @@
 import os
-import IPython.utils
-# Configuration file for ipcluster.
+from IPython.utils.path import expand_path
 
+# Configuration file for ipcluster.
 c = get_config()
 
 # delay between controller starting and engine starting
 c.IPClusterStart.delay = 1.0 
 
 # set working directory
-work_dir = os.path.expanduser('~/ipclusterworkdir')
+work_dir = expand_path('~/ipclusterworkdir')
 if not os.path.exists(work_dir):
     os.makedirs(work_dir)
 c.IPClusterStart.work_dir = work_dir
@@ -26,7 +26,5 @@ c.LocalControllerLauncher.controller_cmd = ['ipcontroller']
 c.PBSEngineSetLauncher.job_id_regexp = '\\d+'
 c.PBSEngineSetLauncher.submit_command = ['qsub']
 c.PBSEngineSetLauncher.delete_command = ['qdel']
-
-c.PBSEngineSetLauncher.batch_template_file = os.path.join(IPython.utils.path.get_ipython_dir(), 'profile_pbs', 'pbs_engine.template')
 
 c.PBSEngineSetLauncher.queue = u'default'
