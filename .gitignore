@@ -1,5 +1,7 @@
 #pid files from ipython
 *.pid
+*.log
+*.json
 
 *.py[co]
 
